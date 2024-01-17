@@ -1,5 +1,8 @@
 #from . import xmlang
-from .basic import logs
+__all__ = ['logs']
+
+from .basic.logs import *
+#from . import xmlang
 
 def test_gondola():
     print("hello here is gondola")
@@ -7,4 +10,3 @@ def test_gondola():
 __version__="0.1.3"
 '''This initial version'''
 
-__all__ = ['basic']
