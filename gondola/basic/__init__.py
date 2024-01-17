@@ -1,3 +1,3 @@
-from . logs import *
+from .logs import *
 
 __all__=['logs']
