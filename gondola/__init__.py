@@ -1,5 +1,5 @@
 #from . import xmlang
-from . import basic
+from .basic import logs
 
 def test_gondola():
     print("hello here is gondola")
