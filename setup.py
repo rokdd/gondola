@@ -1,13 +1,13 @@
 from setuptools import setup,find_packages
 
-from gondola import __version__
+#from gondola import __version__
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
     name='gondola',
-    version=__version__,
+    version="0.1.14",
     url='',
     author='rokdd',
     author_email='rokdd@gmx.ch',
