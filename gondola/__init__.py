@@ -1,2 +1,2 @@
 #from . import xmlang
-from . import basic
+from .basic import basic
