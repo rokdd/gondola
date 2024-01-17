@@ -1,6 +1,6 @@
 from setuptools import setup,find_packages
 
-from __init__ import __version__
+from gondola import __version__
 
 setup(
     name='gondola',

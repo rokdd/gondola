@@ -1,2 +1,6 @@
 #from . import xmlang
-from .basic import basic
+from . import basic
+
+
+__version__="0.1.3"
+'''This initial version'''
