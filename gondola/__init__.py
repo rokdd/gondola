@@ -1,7 +1,7 @@
 #from . import xmlang
-__all__ = ['logs']
+__all__ = ['test_gondola',"basic"]
 
-from .basic.logs import *
+#from .basic.logs import *
 #from . import xmlang
 
 def test_gondola():
