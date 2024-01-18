@@ -1,6 +1,8 @@
 #from . import xmlang
 __all__ = ['test_gondola',"basic"]
 
+import basic
+
 #from .basic.logs import *
 #from . import xmlang
 
