@@ -1,4 +1,4 @@
-from setuptools import setup,find_packages
+from setuptools import setup,find_packages,find_namespace_packages
 
 #from gondola import __version__
 
@@ -11,7 +11,7 @@ setup(
     url='',
     author='rokdd',
     author_email='rokdd@gmx.ch',
-    py_modules=find_packages(),
+    py_modules=find_namespace_packages(),
        long_description=long_description,
     long_description_content_type="text/markdown",
 )
