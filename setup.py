@@ -11,7 +11,8 @@ setup(
     url='',
     author='rokdd',
     author_email='rokdd@gmx.ch',
-    py_modules=find_namespace_packages(),
+    #py_modules=find_namespace_packages(),
+    packages=find_namespace_packages(),
        long_description=long_description,
     long_description_content_type="text/markdown",
 )
