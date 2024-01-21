@@ -1,2 +1,2 @@
-from gondola.basic.logs import *
+from logs import *
 
