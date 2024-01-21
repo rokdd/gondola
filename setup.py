@@ -1,6 +1,5 @@
-from setuptools import setup,find_packages,find_namespace_packages
+from setuptools import setup,find_namespace_packages
 
-from gondola import __version__
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
