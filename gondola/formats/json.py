@@ -1,3 +1,4 @@
+import json
 
 def read(path,logger):
     with open(path) as fd:
