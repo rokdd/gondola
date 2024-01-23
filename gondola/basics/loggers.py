@@ -7,6 +7,15 @@ import pprint
 #colors
 
 def __l_typ__pprint(x,compact=False):
+    """__l_typ__pprint _summary_
+
+    Args:
+        x (_type_): _description_
+        compact (bool, optional): _description_. Defaults to False.
+
+    Returns:
+        _type_: _description_
+    """
     if isinstance(x,dict):
         return "\n"+pprint.pformat(x,compact=compact)
     
