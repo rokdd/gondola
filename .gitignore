@@ -6,6 +6,7 @@ DEV.md
 /Sphinx-docs
 doci.py
 __pycache__
+_build/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
