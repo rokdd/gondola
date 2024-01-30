@@ -5,6 +5,8 @@
 
 Welcome to Gondola Kit
 ===================================
+.. autosummary::
+   :toctree: stubs
 
 .. toctree::
    :maxdepth: 4
@@ -13,5 +15,3 @@ Welcome to Gondola Kit
    some-feature.md
    another-feature.md
 
-.. autosummary::
-     :toctree: stubs
