@@ -7,7 +7,7 @@ import loggers
 
 def test_gondola():
     """
-    test_gondola _summary_
+    test_gondola ist ein Test ob die Gondel fährt
 
     _extended_summary_
     """
