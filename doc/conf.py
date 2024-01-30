@@ -32,7 +32,11 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.ifconfig',
 
     'sphinx.ext.githubpages',
-    'sphinx.ext.napoleon',]
+    'sphinx.ext.napoleon','sphinx.ext.autosummary',]
+# NOTE: Don't overwrite your old extension list! Just add to it!
+
+autodoc_default_flags = ['members']
+autosummary_generate = True
 
 # Napoleon settings
 napoleon_google_docstring = True
