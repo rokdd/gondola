@@ -12,3 +12,6 @@ Welcome to Gondola Kit
 
    some-feature.md
    another-feature.md
+
+.. autosummary::
+     :toctree: stubs
