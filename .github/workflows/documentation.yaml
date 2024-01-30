@@ -13,10 +13,15 @@ jobs:
       - uses: actions/setup-python@v3
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx_rtd_theme myst_parser
+          pip install python3-sphinx sphinx_rtd_theme myst_parser
       - name: Sphinx build
         run: |
           sphinx-apidoc -o doc src
+      - name: ls
+        run: |
+          ls doc
+      - name: Make
+        run: |
           make html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
