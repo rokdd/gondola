@@ -6,18 +6,6 @@
 Welcome to our Gondola Kit
 ===================================
 
-.. autosummary::
-   :toctree: _autosummary
-   :caption: A
-
 .. toctree::
    :maxdepth: 4
    :caption: Contents:
-
-   some-feature.md
-   another-feature.md
-
-.. autosummary::
-   :toctree: _autosummary
-   :recursive:
-   :caption: B
