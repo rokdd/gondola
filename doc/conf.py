@@ -11,8 +11,8 @@ import sys
 sys.path.insert(0,os.path.abspath("."))
 
 project = 'gondola'
-copyright = 'workshop participant'
-author = 'workshop participant'
+copyright = 'rokdd'
+author = 'rokdd'
 release = '0.1'
 
 
