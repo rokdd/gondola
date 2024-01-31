@@ -38,6 +38,8 @@ autodoc_default_flags = ['members']
 autosummary_generate = True
 autoapi_dirs = ['../gondola']
 
+todo_include_todos = True
+
 # Napoleon settings
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True

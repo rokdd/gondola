@@ -11,3 +11,4 @@ Welcome to our Gondola Kit
    :caption: Contents:
    
    Getting-started.md
+   todos.md
