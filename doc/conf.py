@@ -32,11 +32,11 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.ifconfig',
 
     'sphinx.ext.githubpages',
-    'sphinx.ext.napoleon','sphinx.ext.autosummary',]
+    'sphinx.ext.napoleon','sphinx.ext.autosummary','autoapi.extension']
 
 autodoc_default_flags = ['members']
 autosummary_generate = True
-
+autoapi_dirs = ['../gondola']
 
 # Napoleon settings
 napoleon_google_docstring = True

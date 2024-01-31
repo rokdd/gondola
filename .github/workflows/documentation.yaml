@@ -16,17 +16,12 @@ jobs:
           sudo apt-get install python3-sphinx
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx_rtd_theme myst_parser
+          pip install sphinx sphinx_rtd_theme myst_parser sphinx-autoapi
           
       - name: Sphinx build
         run: |
-          sphinx-apidoc -o doc src
-      - name: ls
-        run: |
-          ls doc
-      - name: Make
-        run: |
-          cd doc && make html
+          cd doc && sphinx-build -b html . _build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
