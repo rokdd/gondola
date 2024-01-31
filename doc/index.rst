@@ -9,3 +9,5 @@ Welcome to our Gondola Kit
 .. toctree::
    :maxdepth: 4
    :caption: Contents:
+   
+   Getting-started.md

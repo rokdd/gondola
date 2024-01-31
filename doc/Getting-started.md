@@ -1,4 +1,4 @@
-# Some feature
+# Getting started
 
 ## Subsection
 
