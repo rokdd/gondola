@@ -11,4 +11,6 @@ Welcome to our Gondola Kit
    :caption: Contents:
    
    Getting-started.md
-   todos.md
+   todos.rst
+
+.. todolist::
