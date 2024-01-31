@@ -21,5 +21,3 @@ Welcome to our Gondola Kit
    :toctree: _autosummary
    :recursive:
    :caption: B
-
-   gondola
