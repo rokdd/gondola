@@ -9,10 +9,7 @@ def read(path,default={}):
     Args:
         path (_type_): posix or string path to the file
 
-    Note:
-        Default value need to be used when file not exists
-        
-    .. todo:: This comment will appear
+    .. todo:: Default value need to be used when file not exists
 
     Returns:
         object: json
