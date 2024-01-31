@@ -11,6 +11,9 @@ def read(path,default={}):
 
     Note:
         Default value need to be used when file not exists
+        
+    .. todo:: This comment will appear
+
     Returns:
         object: json
     """    
