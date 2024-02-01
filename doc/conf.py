@@ -37,6 +37,7 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.napoleon','sphinx.ext.autosummary','autoapi.extension']
 
 autodoc_default_flags = ['members']
+autoapi_template_dir = "_templates/autoapi"
 autosummary_generate = True
 autoapi_dirs = ['../gondola']
 
