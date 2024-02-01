@@ -63,3 +63,15 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
+
+def skip(app, what, name, obj, would_skip, options):
+    if name in ( '__init__',):
+        return False
+    return would_skip
+def setup(app):
+    app.connect('autodoc-skip-member', skip)
