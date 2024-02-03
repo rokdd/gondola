@@ -15,7 +15,7 @@ from importlib.metadata import version
 project = 'gondola'
 copyright = 'rokdd'
 author = 'rokdd'
-release = version("InstalledPackageName")
+release = version("gondola")
 
 
 # -- General configuration ---------------------------------------------------
