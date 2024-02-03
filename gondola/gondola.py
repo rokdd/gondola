@@ -1,9 +1,12 @@
 #from . import xmlang
-__all__ = ['test_gondola',"basics","formats","loggers"]
+__all__ = ['test_gondola',"basics","formats","loggers","__version__"]
 
 import basics
 import formats
 import loggers
+
+__version__="0.1.14"
+
 
 def test_gondola():
     """
