@@ -13,10 +13,10 @@ jobs:
       - uses: actions/setup-python@v3
       - name: Install dependencies
         run: |
-          sudo apt-get install python3-sphinx
+          sudo apt-get install python3-sphinx python3-venv
       - name: Install dependencies
         run: |
-          pip install sphinx_rtd_theme myst_parser sphinx-autoapi
+          pip install -U sphinx_rtd_theme myst_parser sphinx-autoapi
           
       - name: Sphinx build
         run: |
