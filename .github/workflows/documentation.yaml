@@ -16,7 +16,7 @@ jobs:
           sudo apt-get install python3-sphinx
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx_rtd_theme myst_parser sphinx-autoapi
+          pip install sphinx_rtd_theme myst_parser sphinx-autoapi
           
       - name: Sphinx build
         run: |
