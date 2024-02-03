@@ -4,10 +4,11 @@ from setuptools import setup, find_namespace_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-from gondola import __version__
+
+
 setup(
     name="gondola",
-    version=__version__,
+    version="0.1.14",
     url="https://github.com/rokdd/gondola",
     author="rokdd",
     author_email="rokdd@gmx.ch",

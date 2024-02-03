@@ -10,12 +10,11 @@ import os
 import sys
 sys.path.insert(0,os.path.abspath("."))
 
-from importlib.metadata import version
-from gondola import __version__
+
 project = 'gondola'
 copyright = 'rokdd'
 author = 'rokdd'
-release = __version__
+release = "0.1.14"
 
 
 # -- General configuration ---------------------------------------------------
