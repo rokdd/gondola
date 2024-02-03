@@ -11,11 +11,11 @@ import sys
 sys.path.insert(0,os.path.abspath("."))
 
 from importlib.metadata import version
-
+from ..setup import __version__
 project = 'gondola'
 copyright = 'rokdd'
 author = 'rokdd'
-release = version("gondola")
+release = __version__
 
 
 # -- General configuration ---------------------------------------------------
