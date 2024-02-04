@@ -17,10 +17,10 @@ setup(
     long_description_content_type="text/markdown",
     install_requires=[
         #for logging
-        "pprint"
+        #"pprint"
         ],
     # install_requires=["gondola[]"],
-    # extras_require={
-    #    "PDF": ["ReportLab>=1.2", "RXP"],
-    # },
+    extras_require={
+        "loggers": ["pprint"],
+    },
 )
