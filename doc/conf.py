@@ -14,7 +14,7 @@ sys.path.insert(0,os.path.abspath("."))
 project = 'gondola'
 copyright = 'rokdd'
 author = 'rokdd'
-release = "0.1.14"
+release = "0.1.15"
 
 
 # -- General configuration ---------------------------------------------------

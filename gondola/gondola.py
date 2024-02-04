@@ -6,7 +6,7 @@ import formats
 import loggers
 
 
-__version__="0.1.14"
+__version__="0.1.15"
 
 def test_gondola():
     """

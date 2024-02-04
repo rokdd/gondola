@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="gondola",
-    version="0.1.14",
+    version="0.1.15",
     url="https://github.com/rokdd/gondola",
     author="rokdd",
     author_email="rokdd@gmx.ch",
