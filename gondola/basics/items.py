@@ -4,7 +4,7 @@ def filter_items_by_dict(dic,filter,need_all_keys=True):
     r=[]
     for entry in dic:
         #when filter empty evertyhing gets selected
-        f=True
+        
         fs=[]
         for fk, fv in filter.items():
             #filter is found
@@ -18,7 +18,8 @@ def filter_items_by_dict(dic,filter,need_all_keys=True):
                 if need_all_keys:
                     #no need to look further
                     break
-        if len(fs)>0 and (len(fs)==len(filter.keys) or need_all_keys is False):
+
+        if len(fs)>0 and (len(fs)==len(filter.keys()) or need_all_keys is False):
             #append to the results when at least one result and either all cond True or we dont need all of them to be true
             r.append(entry)
     return r
