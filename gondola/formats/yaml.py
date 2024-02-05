@@ -21,3 +21,4 @@ def read(path,default={}):
 
             mapping = yaml.safe_load(fd)
             return mapping
+    return default
