@@ -4,6 +4,6 @@ from .yaml import read
 """ 
 Main package
 
-.. todo:: Add yaml
+map["value"]
 
 """
