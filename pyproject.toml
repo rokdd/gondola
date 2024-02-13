@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "gondola"
+version = "0.1.15"
+description = ""
+authors = ["rokdd <rokdd@web.de>"]
+readme = "README.md"
+packages = [{include = "gondola"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "7.4.2"
+pytest-cov = "4.1.0"
+black = "23.9.1"
+mypy = "1.5.1"
+bandit = "1.7.5"
+docformatter = "1.7.5"
+ruff = "0.0.289"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+backend-path = ["gondola"]
+
+[tool.pytest.ini_options]
+addopts = "-vvv"
+testpaths = "tests"
+
+[tool.black]
+line_length = 90
+target_version = ['py310']
+
+[tool.ruff]
+exclude = [
+    ".venv",
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "venv",
+    "doc",
+]
+ignore = []
+line-length = 90
+select = [
+    "E",
+    "F",
+    "W",
+    "I001",
+]
+src = ["gondola", "tests"]
+
+[mypy]
+files = ["gondola"]
+strict_optional = false
