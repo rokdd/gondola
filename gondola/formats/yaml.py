@@ -1,5 +1,8 @@
-import yaml
 import os
+
+import yaml
+
+
 def read(path,default={}):
     """
     read Reads a yaml file from a path
@@ -13,8 +16,7 @@ def read(path,default={}):
 
     Returns:
         object: dict
-    """    
-    
+    """
 
     if os.path.exists(path):
         with open(path) as fd:

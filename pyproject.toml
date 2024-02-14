@@ -51,7 +51,3 @@ select = [
     "I001",
 ]
 src = ["gondola", "tests"]
-
-[mypy]
-files = ["gondola"]
-strict_optional = false

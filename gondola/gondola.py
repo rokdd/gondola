@@ -5,7 +5,7 @@ import basics
 import formats
 import loggers
 
-""" 
+"""
 Main package
 
 .. todo:: Add tasks from rokdd
