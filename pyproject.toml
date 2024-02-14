@@ -5,6 +5,10 @@ description = ""
 authors = ["rokdd <rokdd@web.de>"]
 readme = "README.md"
 packages = [{include = "gondola"}]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "gondola.__version__"}
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -22,13 +26,10 @@ ruff = "0.0.289"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-backend-path = ["gondola"]
 
 [tool.pytest.ini_options]
 addopts = "-vvv"
 testpaths = "tests"
-
-
 
 [tool.ruff]
 exclude = [
