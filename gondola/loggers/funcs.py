@@ -1,4 +1,5 @@
 import pprint
+
 #import logging
 
 #log to file
@@ -21,7 +22,7 @@ def __l_typ__pprint(x,compact=False):
 
     if type(x).__name__=="DictPath":
         return "\n"+pprint.pformat(x.dict,compact=compact)
-    
+
     return str(x)
 
 def lj(*args):
