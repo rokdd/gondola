@@ -18,7 +18,7 @@ def __l_typ__pprint(x,compact=False):
     """
     if isinstance(x,dict):
         return "\n"+pprint.pformat(x,compact=compact)
-    
+
     if type(x).__name__=="DictPath":
         return "\n"+pprint.pformat(x.dict,compact=compact)
     
