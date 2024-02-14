@@ -1,3 +1,7 @@
+[project]
+name="gondola"
+dynamic = ["version"]
+
 [tool.poetry]
 name = "gondola"
 version = "0.1.15"
@@ -5,7 +9,7 @@ description = ""
 authors = ["rokdd <rokdd@web.de>"]
 readme = "README.md"
 packages = [{include = "gondola"}]
-dynamic = ["version"]
+
 
 [tool.setuptools.dynamic]
 version = {attr = "gondola.__version__"}
@@ -13,6 +17,7 @@ version = {attr = "gondola.__version__"}
 [tool.poetry.dependencies]
 python = "^3.10"
 pytest = "7.4.2"
+dynamic = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "7.4.2"
