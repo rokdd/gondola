@@ -26,8 +26,8 @@ def __l_typ__pprint(x,compact=False):
     return str(x)
 
 def lj(*args):
-	'''Takes all arguments and join them with a delimiter as string. It simulates like the logging function where you can add multiple arguments which gets concat'''
-	return (" ".join([__l_typ__pprint(a) for a in args if not type(a)=="NoneType"]))
+    '''Takes all arguments and join them with a delimiter as string. It simulates like the logging function where you can add multiple arguments which gets concat'''
+    return (" ".join([__l_typ__pprint(a) for a in args if not type(a)=="NoneType"]))
 
 def join_for_debug(*args):
      return lj(*args)
