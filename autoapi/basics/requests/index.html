@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>basics.requests &mdash; gondola 0.1.15 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=eafc0fe6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=e2f3408e"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="basics.shell" href="../shell/index.html" />
+    <link rel="prev" title="basics.objects" href="../objects/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            gondola
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../Getting-started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../todos.html">Todos</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../gondola/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gondola</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics</span></code></a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../items/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.items</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.lists</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../objects/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.objects</span></code></a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.requests</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../shell/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.shell</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../time/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.time</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#package-contents">Package Contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../formats/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">formats</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../loggers/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">loggers</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">gondola</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics</span></code></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.requests</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/autoapi/basics/requests/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-basics.requests">
+<span id="basics-requests"></span><h1><a class="reference internal" href="#module-basics.requests" title="basics.requests"><code class="xref py py-mod docutils literal notranslate"><span class="pre">basics.requests</span></code></a><a class="headerlink" href="#module-basics.requests" title="Link to this heading"></a></h1>
+<p>import requests
+import app.settings as settings</p>
+<p>http = requests.Session()</p>
+<p>from requests.adapters import HTTPAdapter
+import requests
+import urllib</p>
+<p>DEFAULT_TIMEOUT = 60 # seconds</p>
+<dl>
+<dt>class TimeoutHTTPAdapter(HTTPAdapter):</dt><dd><dl>
+<dt>def __init__(self, <a href="#id1"><span class="problematic" id="id2">*</span></a>args, <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs):</dt><dd><p>self.timeout = DEFAULT_TIMEOUT
+if “timeout” in kwargs:</p>
+<blockquote>
+<div><p>self.timeout = kwargs[“timeout”]
+del kwargs[“timeout”]</p>
+</div></blockquote>
+<p>super().__init__(<a href="#id5"><span class="problematic" id="id6">*</span></a>args, <a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs)</p>
+</dd>
+<dt>def send(self, request, <a href="#id9"><span class="problematic" id="id10">**</span></a>kwargs):</dt><dd><p>timeout = kwargs.get(“timeout”)
+if timeout is None:</p>
+<blockquote>
+<div><p>kwargs[“timeout”] = self.timeout</p>
+</div></blockquote>
+<dl class="simple">
+<dt>if “?hh” in request.url:</dt><dd><p>print(request.url)
+main, querystr = request.url.split(‘?’) # Nasty hack, not always valid.
+print(querystr)
+querystr = urllib.parse.unquote(querystr)
+print(querystr)
+querystr = urllib.parse.quote(querystr, safe=’/&amp;:=[]’)
+request.url = ‘?’.join([main, querystr])
+print(querystr)
+print(request.url)</p>
+</dd>
+</dl>
+<p>return super().send(request, <a href="#id11"><span class="problematic" id="id12">**</span></a>kwargs)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>from requests.packages.urllib3.util.retry import Retry</p>
+<dl class="simple">
+<dt>retry_strategy = Retry(</dt><dd><p>total=20,
+status_forcelist=[429, 500, 502, 503, 504],
+method_whitelist=[“HEAD”, “GET”, “OPTIONS”]</p>
+</dd>
+</dl>
+<p>)</p>
+<p># Mount it for both http and https usage
+adapter = TimeoutHTTPAdapter(timeout=50,max_retries=retry_strategy)
+http.mount(”<a class="reference external" href="https://">https://</a>”, adapter)
+http.mount(”<a class="reference external" href="http://">http://</a>”, adapter)</p>
+<p>from urllib.request import urlopen</p>
+<dl>
+<dt>def req(url,method=”get”,return_obj=False,return_json=True,**kwargs):</dt><dd><p>foo = kwargs.pop(‘headers’) if “headers” in kwargs.keys() else {}
+#print(url)
+q=””</p>
+<dl>
+<dt>if “params” in kwargs.keys():</dt><dd><dl class="simple">
+<dt>if “filter” in kwargs[“params”].keys() and not isinstance(kwargs[“params”][“filter”],str):</dt><dd><p>kwargs[“params”][“filter”]=json.dumps(kwargs[“params”][“filter”])</p>
+</dd>
+</dl>
+<p>kwargs[“params”]= “&amp;”.join(“%s=%s” % (k,v) for k,v in kwargs[“params”].items())
+settings.lg[“g”].debug(“Changed params query:”+kwargs[“params”])
+q=”?”+kwargs[“params”]
+kwargs.pop(‘params’)</p>
+</dd>
+</dl>
+<p>response = getattr(http,method)((settings.base_url if not “http” in url else “”)+url+q, headers={<a href="#id13"><span class="problematic" id="id14">**</span></a>settings.headersAPI  ,**foo} if not “http” in url else foo, verify=True,**kwargs)
+if “data” in kwargs.keys():</p>
+<blockquote>
+<div><p>kwargs.pop(“data”)</p>
+</div></blockquote>
+<p>settings.lg[“g”].debug(settings.l(method,”:”,url,foo),extra={“response”:response.text,”headers:”:{<a href="#id15"><span class="problematic" id="id16">**</span></a>settings.headersAPI,**foo}if not “http” in url else foo,**kwargs})
+if not return_json:</p>
+<blockquote>
+<div><p>return response</p>
+</div></blockquote>
+<dl>
+<dt>if response.text==””:</dt><dd><dl class="simple">
+<dt>if return_obj:</dt><dd><p>return response,{}</p>
+</dd>
+</dl>
+<p>return {}</p>
+</dd>
+<dt>if return_obj:</dt><dd><p>return response,response.json()</p>
+</dd>
+</dl>
+<p>return response.json()</p>
+</dd>
+</dl>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../objects/index.html" class="btn btn-neutral float-left" title="basics.objects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../shell/index.html" class="btn btn-neutral float-right" title="basics.shell" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright rokdd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+:py:mod:`formats.yaml`
+======================
+
+.. py:module:: formats.yaml
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   formats.yaml.read
+
+
+
+.. py:function:: read(path, default={})
+
+   read Reads a yaml file from a path
+
+   _extended_summary_
+
+   :param path: posix or string path to the file
+   :type path: _type_
+
+   .. todo:: Default value need to be used when file not exists
+
+   :returns: dict
+   :rtype: object
+
+

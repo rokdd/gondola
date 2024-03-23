@@ -1,0 +1,34 @@
+:py:mod:`basics.time`
+=====================
+
+.. py:module:: basics.time
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   basics.time.is_file_older_than
+   basics.time.all_lists_as_dict
+   basics.time.pretty_print_timedelta
+
+
+
+.. py:function:: is_file_older_than(file, delta)
+
+
+.. py:function:: all_lists_as_dict(d)
+
+
+.. py:function:: pretty_print_timedelta(t, max_components=None, max_decimal_places=1)
+
+   Print a pretty string for a timedelta.
+   For example datetime.timedelta(days=2, seconds=17280) will be printed as '2 days, 4 hours, 48 minutes'. Setting max_components to e.g. 1 will change this to '2.2 days', where the
+   number of decimal points can also be set.
+
+

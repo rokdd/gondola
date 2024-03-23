@@ -1,0 +1,38 @@
+:py:mod:`formats.json`
+======================
+
+.. py:module:: formats.json
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   formats.json.read
+   formats.json.write
+
+
+
+.. py:function:: read(path, default={})
+
+   read Reads a json file from a path
+
+   _extended_summary_
+
+   :param path: posix or string path to the file
+   :type path: _type_
+
+   .. todo:: Default value need to be used when file not exists
+
+   :returns: json
+   :rtype: object
+
+
+.. py:function:: write(path, data)
+
+

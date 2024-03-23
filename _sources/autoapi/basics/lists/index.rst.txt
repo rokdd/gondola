@@ -1,0 +1,44 @@
+:py:mod:`basics.lists`
+======================
+
+.. py:module:: basics.lists
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   basics.lists.make_iterable
+   basics.lists.substract_lists
+
+
+
+.. py:function:: make_iterable(inp)
+
+   make_iterable makes a variable to a list if it is not yet
+
+   :param inp: variable to convert to list
+   :type inp: _type_
+
+   :returns: list, with one or more elements
+   :rtype: list
+
+
+.. py:function:: substract_lists(obj: list, sub: list) -> list
+
+   substract_lists removes elements from the first list which are included in the second list
+
+   :param obj: list to keep elements
+   :type obj: list
+   :param sub: list of elements to remove
+   :type sub: list
+
+   :returns: shortend list
+   :rtype: list
+
+

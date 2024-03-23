@@ -1,0 +1,90 @@
+:py:mod:`basics`
+================
+
+.. py:module:: basics
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   items/index.rst
+   lists/index.rst
+   objects/index.rst
+   requests/index.rst
+   shell/index.rst
+   time/index.rst
+
+
+Package Contents
+----------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   basics.make_iterable
+   basics.substract_lists
+   basics.get_attr_fail_safe
+   basics.is_file_older_than
+   basics.all_lists_as_dict
+   basics.pretty_print_timedelta
+   basics.filter_items_by_dict
+   basics.system_call
+
+
+
+.. py:function:: make_iterable(inp)
+
+   make_iterable makes a variable to a list if it is not yet
+
+   :param inp: variable to convert to list
+   :type inp: _type_
+
+   :returns: list, with one or more elements
+   :rtype: list
+
+
+.. py:function:: substract_lists(obj: list, sub: list) -> list
+
+   substract_lists removes elements from the first list which are included in the second list
+
+   :param obj: list to keep elements
+   :type obj: list
+   :param sub: list of elements to remove
+   :type sub: list
+
+   :returns: shortend list
+   :rtype: list
+
+
+.. py:function:: get_attr_fail_safe(obj, attr)
+
+
+.. py:function:: is_file_older_than(file, delta)
+
+
+.. py:function:: all_lists_as_dict(d)
+
+
+.. py:function:: pretty_print_timedelta(t, max_components=None, max_decimal_places=1)
+
+   Print a pretty string for a timedelta.
+   For example datetime.timedelta(days=2, seconds=17280) will be printed as '2 days, 4 hours, 48 minutes'. Setting max_components to e.g. 1 will change this to '2.2 days', where the
+   number of decimal points can also be set.
+
+
+.. py:function:: filter_items_by_dict(dic, filter, need_all_keys=True)
+
+
+.. py:function:: system_call(command)
+
+   params:
+       command: string, ex. `"ls -l"`
+   returns: output, success
+
+

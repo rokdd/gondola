@@ -1,0 +1,42 @@
+:py:mod:`loggers.funcs`
+=======================
+
+.. py:module:: loggers.funcs
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   loggers.funcs.__l_typ__pprint
+   loggers.funcs.lj
+   loggers.funcs.join_for_debug
+
+
+
+.. py:function:: __l_typ__pprint(x, compact=False)
+
+   __l_typ__pprint _summary_
+
+   :param x: _description_
+   :type x: _type_
+   :param compact: _description_. Defaults to False.
+   :type compact: bool, optional
+
+   :returns: _description_
+   :rtype: _type_
+
+
+.. py:function:: lj(*args)
+
+   Takes all arguments and join them with a delimiter as string. It simulates like the logging function where you can add multiple arguments which gets concat
+
+
+.. py:function:: join_for_debug(*args)
+
+

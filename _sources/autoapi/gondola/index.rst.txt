@@ -1,0 +1,39 @@
+:py:mod:`gondola`
+=================
+
+.. py:module:: gondola
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   gondola.test_gondola
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   gondola.__version__
+
+
+.. py:data:: __version__
+   :value: '0.1.15'
+
+   
+
+.. py:function:: test_gondola()
+
+   test_gondola ist ein Test ob die Gondel fährt
+
+   _extended_summary_
+
+

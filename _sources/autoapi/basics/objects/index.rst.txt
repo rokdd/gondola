@@ -1,0 +1,22 @@
+:py:mod:`basics.objects`
+========================
+
+.. py:module:: basics.objects
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   basics.objects.get_attr_fail_safe
+
+
+
+.. py:function:: get_attr_fail_safe(obj, attr)
+
+

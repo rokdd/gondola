@@ -1,0 +1,53 @@
+:py:mod:`formats`
+=================
+
+.. py:module:: formats
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   javascript/index.rst
+   json/index.rst
+   yaml/index.rst
+
+
+Package Contents
+----------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   formats.strip_js_comments
+   formats.write
+   formats.read
+
+
+
+.. py:function:: strip_js_comments(string)
+
+
+.. py:function:: write(path, data)
+
+
+.. py:function:: read(path, default={})
+
+   read Reads a yaml file from a path
+
+   _extended_summary_
+
+   :param path: posix or string path to the file
+   :type path: _type_
+
+   .. todo:: Default value need to be used when file not exists
+
+   :returns: dict
+   :rtype: object
+
+

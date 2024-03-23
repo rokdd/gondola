@@ -1,0 +1,26 @@
+:py:mod:`basics.shell`
+======================
+
+.. py:module:: basics.shell
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   basics.shell.system_call
+
+
+
+.. py:function:: system_call(command)
+
+   params:
+       command: string, ex. `"ls -l"`
+   returns: output, success
+
+

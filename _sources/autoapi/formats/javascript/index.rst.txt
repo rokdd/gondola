@@ -1,0 +1,22 @@
+:py:mod:`formats.javascript`
+============================
+
+.. py:module:: formats.javascript
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   formats.javascript.strip_js_comments
+
+
+
+.. py:function:: strip_js_comments(string)
+
+
